@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package user.v1;
+
+option go_package = "encore.app/gen/user/v1;userv1";
+
+message UserRequest {
+  string name = 1;
+}
+
+message UserResponse {
+  string id = 1;
+}
+
+service UserService {
+  rpc Get(UserRequest) returns (UserResponse) {}
+}
