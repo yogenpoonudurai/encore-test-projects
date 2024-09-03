@@ -1,0 +1,69 @@
+{
+  "api_base_url": "https://my-base-url",
+  "env_name": "my-env-name",
+  "env_type": "development",
+  "env_cloud": "local",
+  "deploy_time": "2024-04-09T16:25:06.502476123Z",
+  "cors": {
+    "allow_origins_without_credentials": ["*"]
+  },
+  "service_auth": [{ "method": "noop" }],
+  "gateways": [
+    {
+      "name": "api-gateway",
+      "host": "my-api-gateway.com"
+    }
+  ],
+  "hosted_services": ["foo", "bar"],
+  "service_discovery": {
+    "baz": {
+      "name": "baz",
+      "url": "http://baz.svc.cluster.local:8080",
+      "protocol": "http",
+      "service_auth": { "method": "noop" }
+    }
+  },
+  "sql_databases": [{
+    "server_id": 0,
+    "encore_name": "users",
+    "database_name": "users",
+    "user": "my-database-username",
+    "password": "my-database-password",
+    "min_connections": 0,
+    "max_connections": 100
+  }
+  ],
+  "sql_servers": [
+    {
+      "host": "127.0.0.1:5432",
+      "server_ca_cert": "",
+      "client_cert": "",
+      "client_key": ""
+    }
+  ],
+  "pubsub_providers": [
+    {"nsq": {"host": "localhost:4150"}},
+    {"gcp": {}},
+    {"aws": {}},
+    {"azure": {"namespace": "my-namespace"}}
+  ],
+  "pubsub_topics": {
+    "my-topic": {
+      "provider_id": 0,
+      "encore_name": "my-topic",
+      "provider_name": "my-topic",
+      "subscriptions": {
+        "my-subscription": {
+          "encore_name": "my-subscription",
+          "provider_name": "my-subscription"
+        }
+      }
+    }
+  },
+  "metrics": {
+    "collection_interval": "60s",
+    "aws_cloud_watch": {
+      "Namespace": "my-namespace"
+    }
+  }
+}
