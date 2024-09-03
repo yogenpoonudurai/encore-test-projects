@@ -1,0 +1,4 @@
+encore.dev v1.37.0 h1:of8TTr+SEPHb9riB6feibBa/6mjbaElVd519pOK026w=
+encore.dev v1.37.0/go.mod h1:XdWK6bKKAVzutmOKpC5qzalDQJLNfRCF/YCgA7OUZ3E=
+go.temporal.io/sdk v1.28.1 h1:PsexsNDWXyWdJp4KWTOD+DfSZD1z0k5U/dIJF05akT4=
+go.temporal.io/sdk v1.28.1/go.mod h1:zHcmZNXPaKXQJ6Hn98Ebcii7VlHL1mI4RJW8R6GQa1k=
