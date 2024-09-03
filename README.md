@@ -4,7 +4,8 @@
 Install the following:
 1. Go [Download](https://go.dev/dl/)
 2. Encore [Link](https://encore.dev/docs/install)
-3. Docker [Link]()
+3. Docker [Link](https://docs.docker.com/engine/install/ubuntu/)
+4. Temporal [Link](https://docs.temporal.io/cli)
 
 
 ### Project Overview
